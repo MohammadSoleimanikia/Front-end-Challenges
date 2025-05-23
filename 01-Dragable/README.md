@@ -1,5 +1,6 @@
 # Drag and Drop List Component
-A simple React component that implements drag and drop functionality for reordering list items.
+## challenge
+Build A simple React component that implements drag and drop functionality for reordering list items.
 
 ## Features
 

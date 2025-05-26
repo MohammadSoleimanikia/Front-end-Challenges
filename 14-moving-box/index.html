@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Movement</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div id="square"></div>
+    </body>
+    <script>
+        document.addEventListener("keydown", (e) => {
+            const box = document.getElementById("square");
+            const style = window.getComputedStyle(box);
+            const top = parseInt(style.top) || 0;
+            const left = parseInt(style.left) || 0;
+
+            const step = e.shiftKey ? 10 : 1;
+
+            switch (e.key) {
+                case "ArrowUp":
+                    box.style.top = top - step + "px";
+                    break;
+                case "ArrowDown":
+                    box.style.top = top + step + "px";
+                    break;
+                case "ArrowLeft":
+                    box.style.left = left - step + "px";
+                    break;
+                case "ArrowRight":
+                    box.style.left = left + step + "px";
+                    break;
+            }
+        });
+    </script>
+</html>

@@ -1,5 +1,3 @@
-## make timer with reset button 
-```jsx
 import { useEffect, useState } from "react";
 
 export default function Timer() {
@@ -20,5 +18,3 @@ export default function Timer() {
         </>
     );
 }
-
-```

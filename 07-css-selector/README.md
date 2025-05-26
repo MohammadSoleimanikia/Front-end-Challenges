@@ -1,0 +1,2 @@
+* adjacent selector
+* descendant selector

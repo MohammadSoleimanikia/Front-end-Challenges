@@ -1,0 +1,1 @@
+* use input event instead on change because change event only fired when value changed by arrows and not input them

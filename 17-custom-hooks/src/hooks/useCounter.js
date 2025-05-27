@@ -1,10 +1,3 @@
-## custom hooks 
-1. declare like a function 
-2. use react hooks 
-3. return a state or method 
-4. use state or method in app with calling hook 
-
-```js
 import { useState } from "react";
 export default function useCounter(start,finish){
     const [count,setCount]=useState(start);
@@ -13,4 +6,3 @@ export default function useCounter(start,finish){
     }
     return [count,increment];
 }
-```
